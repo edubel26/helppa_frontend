@@ -1,0 +1,25 @@
+.contenedor__table{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+.table{
+    border: 1 solid var(--color-primario);
+}
+
+.button__print{
+
+    display:flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+
+@media print {
+    #parte1 {display:none;}
+    #parte2 {display:none;}
+    #parte3 {display:none;}
+    }

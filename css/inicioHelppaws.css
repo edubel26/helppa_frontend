@@ -1,0 +1,111 @@
+/* 
+    Se encontrara el css de todo el diseño del apartado inicio del aplicativo helppaws 
+*/
+/*Contenido de presentación Helppaws */
+
+.inicio__section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.inicio__informacion{
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+}
+
+.inicio__contenedor{
+    max-width: 40%;
+}
+
+.inicio__titulo{
+    font-family: var(--tipo-texto);
+    font-size: 3.75rem;
+    color: var(--color-titulos);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.inicio__parrafo{
+    font-size: 1.5rem;
+    font-family: var(--tipo-texto);
+    color: var(--color-texto);
+    text-align: left;
+    padding-bottom: 2rem;
+    max-width: 100%;
+}
+
+.inicio__boton{
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+
+    background-color: var(--color-secundario);
+    color: var(--color-texto-inverso);
+    border: none;
+    font-size: 1.3rem;
+    padding: 0.5em 1em;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: auto;
+    width: auto;
+}
+
+.inicio__boton:hover{
+    background-color: var(--color-primario);
+    opacity: 0.8;
+}
+
+.inicio__logo{
+    max-width: 22rem;
+}
+
+
+@media only screen and (max-width: 768px){
+
+    
+    .inicio__informacion{
+        display: block;
+        justify-content: center;
+        max-width: 90%;
+        margin: auto;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .inicio__contenedor{
+        max-width: 100%;
+        padding-bottom: 3rem;
+    }
+    
+    .inicio__titulo{
+        font-family: var(--tipo-texto);
+        font-size: 3.75rem;
+        color: var(--color-titulos);
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    
+    .inicio__parrafo{
+        font-size: 1.5rem;
+        font-family: var(--tipo-texto);
+        color: var(--color-texto);
+        text-align: left;
+        padding-bottom: 2rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    
+    .inicio__logo{
+        max-width: 18rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+

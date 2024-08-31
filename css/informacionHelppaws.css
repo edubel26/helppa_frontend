@@ -1,0 +1,349 @@
+.header__informacion{
+    display: flex;
+    justify-content: center;
+    padding: 1.88rem;
+}
+
+.header__informacion__container{
+    display: block;
+}
+
+.header__informacion__logo{
+    width: 12rem;
+    display: block;
+    padding-left: 1.5rem;
+}
+
+.header__informacion__logoNombre{
+    width: 15rem;
+    height: 3rem;
+}
+
+/* primer section */
+
+.main__informacion{
+    display: block;
+    font-family: var(--tipo-texto);
+    color: var(--color-texto);
+    line-height: 2rem;
+    font-weight: 400;
+ 
+}
+
+.main__informacion__creacion{
+    max-width: 61.25rem;
+    display: flex;
+    justify-content: center;
+    margin-left: auto ;
+    margin-right: auto;
+    padding-bottom: 0.63rem;
+    padding-top: 0.63rem;
+}
+
+.main__informacion__imagenfondoDos{
+    width: 25rem;
+    height: 25rem;
+    display: block;
+    position: absolute;
+    padding-left: auto;
+    opacity: 40%;
+}
+
+.main__informacion__informacion{
+    font-size: 1.25rem;
+    display: block;
+    position: relative;
+    padding: 3rem;
+}
+
+/* tercer section */
+
+.main__informacion__empresa{
+    display: flex;
+    flex-direction: column;
+}
+
+.wave {
+    width: 100%; 
+    position: relative;
+    top: 0.125rem;
+}
+
+
+.main__informacion__empresa_container{
+    background-color: var(--color-secundario);
+    color: var(--color-texto-inverso);
+    font-family: var(--tipo-texto);
+}
+
+
+.mapa__estrategico{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.88rem;
+    padding: 2rem;
+}
+
+.informacion__titulo{
+    font-size: 1.88rem;
+    font-weight: bold;
+    color: var(--color-texto-inverso-dos);
+}
+
+.informacion__parrafo{
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: 0.63rem;
+
+}
+
+.section__informacion{
+    padding: 0;
+}
+
+.main__informacion__empresa__grip{
+    display: grid;
+    grid-template-columns: auto 0.125rem auto;
+    gap: 1.25rem 4.38rem;
+    padding: 2.5rem;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.section__informacion__left{
+    text-align: right;
+}
+
+.linea{
+    background-color: var(--color-texto-inverso);
+    position: relative;
+    
+}
+
+.linea::before,
+.linea::after{
+    content: "" ;
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: var(--color-texto-inverso);
+    border-radius: 50%;
+
+    position: absolute;
+    top: -1.25rem;
+    left: -0.53rem;
+}
+
+.linea::after{
+    top: 100%;
+    z-index: 1;
+}
+
+/*tercer section*/
+
+.main__contenido__final{
+    display:block;
+}
+
+.main__img__final__grupoPerros{
+    display: flex;
+    margin: auto;
+    padding-bottom: 1.88rem;
+}
+
+
+.main__contenido__final{
+    display: block;
+}
+
+.main__contenido__final__titulo{
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem;
+    padding-bottom: 1.88rem;
+}
+
+.video{
+    display: block;
+    margin: auto;
+    padding-bottom: 3.75rem;
+    width: 35rem; 
+    height: 19.69rem;
+
+}
+
+
+.wave-inverso {
+    transform: scaleY(-1);
+    top: -0.125rem;
+}
+
+@media only screen and (max-width: 768px){
+
+
+    .header__informacion__logo{
+        width: 12rem;
+        justify-content: center;
+    }
+    
+    .header__informacion__logoNombre{
+        width: 16rem;
+        height: 3rem;
+    }
+    
+    /* primer section */
+    
+    .main__informacion{
+        display: block;
+        font-family: var(--tipo-texto);
+        color: var(--color-texto);
+        line-height: 2rem;
+        font-weight: 500;
+     
+    }
+    
+    .main__informacion__creacion{
+        max-width: 100%;
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+        padding-bottom: 3rem;
+    }
+    
+    .main__informacion__imagenfondoDos{
+        width: 80%;
+        height: 90%;
+        display: flex;
+        opacity: 40%;
+        margin: auto;
+        max-width: 100%;
+    }
+    
+    
+    .main__informacion__informacion{
+        font-size: 1.15rem;
+        max-width: 100%;
+        padding: 2rem;
+        padding-bottom: 4rem;
+        margin-top: 30px;
+    }
+    
+    /* tercer section */
+    
+    .main__informacion__empresa{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .wave {
+        width: 100%; 
+        position: relative;
+        top: 0.13rem;
+    }
+    
+    
+    .main__informacion__empresa_container{
+        background-color: var(--color-secundario);
+        color: var(--color-texto-inverso);
+        font-family: var(--tipo-texto);
+        
+    }
+    
+    
+    .mapa__estrategico{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.88rem;
+        padding-top: 3rem;
+    }
+    
+    .informacion__titulo{
+        font-size: 1.88rem;
+        font-weight: bold;
+        color: var(--color-texto-inverso-dos);
+        text-align: center;
+        padding-top: 1.25rem;
+        max-width: 100%;
+        padding-bottom: 1.25rem;
+    }
+    
+    .informacion__parrafo{
+        font-weight: 400;
+        font-size: 1.25rem;
+        margin-top: 0.63rem;
+        max-width: 90%;
+        margin: 0 auto;
+        padding-bottom: 2.88rem;
+    }
+    
+    .section__informacion{
+        padding: 0rem;
+    }
+    
+    
+    .main__informacion__empresa__grip{
+        display: grid;
+        grid-template-columns: none;
+        gap: 0;
+        padding: 1rem;
+        justify-content: center;
+        max-width: 100%;
+        margin: 0 ;
+        justify-content: center;
+    }
+    
+    .section__informacion__left{
+        text-align: left;
+    }
+    
+    
+    .linea::before,
+    .linea::after{
+        display: none;
+    }
+    
+    .linea::after{
+        top: 0;
+        z-index: 0;
+    }
+    
+    /*tercer section*/
+    
+    .main__contenido__final{
+        padding-top: 2.5rem;
+    }
+    
+    .main__img__final__grupoPerros{
+        padding-bottom: 1.88rem;
+    }
+    
+    
+    .main__contenido__final{
+        display: block;
+    }
+    
+    .main__contenido__final__titulo{
+        display: flex;
+        justify-content: center;
+        margin: 1.25rem;
+        padding-bottom: 3.88rem;
+    }
+    
+    .video{
+        display: block;
+        margin: auto;
+        padding-bottom: 6.75rem;
+        width: 90%; 
+        height: 12.3rem;
+    }
+    
+    
+    .wave-inverso {
+        transform: scaleY(-1);
+        top: -0.125rem;
+    }
+
+}
+

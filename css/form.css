@@ -1,0 +1,294 @@
+.contenedor__logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+}
+
+.logo__inicioSesion{
+    width: 9.38rem;
+}
+
+.container_login{
+    background-color: var(--color-nav);
+    margin: auto;
+    border-radius: 1.57rem;
+    max-width: 31.25rem;
+    margin-top: 2.19rem;
+    box-shadow: 3px 13px 40px #000000;
+    margin-bottom: 4.38rem;
+}
+
+.login-container{
+    display: block;
+    text-align: center;
+    padding: 2.5rem 0.63rem;
+}
+
+.titulo{
+    font-family: var(--tipo-texto);
+    font-size: 2.19rem;
+    font-weight: 600;
+    color: var(--color-primario);
+    padding-bottom: 1.25rem;
+}
+
+.formurario__inicioSesion{
+    display: block;
+    
+}
+
+.form-group{
+    display: block;
+    max-width: 90%;
+    margin: auto;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+
+.input__file{
+    color: var(--color-primario);
+    background-color: var(--color-texto-inverso);
+}
+
+.label__form{
+    font-family: var(--tipo-texto);
+    color: var(--color-primario);
+    padding-bottom: 0.63rem;
+    font-size: 1.13rem;
+    font-weight: 600;
+    
+}
+
+.form-group input{
+    margin-top: 0.63rem;
+    width: 90%;
+    border-radius: 0.63rem;
+    border: 0;
+    padding: 0.4rem 1rem;
+    outline: none;
+    font-size: 1rem;
+
+}
+
+.bxx{
+    position: relative;
+    top: -1.73rem;
+    left: 26.13rem;
+    font-size: 1.57rem;
+    transform: translateX(-2.19rem);
+    color: var(--color-primario);
+    cursor: pointer;
+    text-align: center;
+}
+
+.checkbox__checkbox{
+    padding-right: 1.25rem;
+    column-gap: 0.63rem;
+    align-items: center;
+    color: var(--color-secundario);
+}
+
+.form__checkbox{
+    display: flex;
+    text-align: center;
+    column-gap: 1rem;
+    padding-right: 1.25rem;
+    color: var(--color-primario);
+    font-weight: 800;
+    max-width: 25rem;
+    margin: auto;
+}
+
+.form__button{
+    padding: 1.9rem 0rem;
+}
+
+.button__button{
+    font-family: var(--tipo-texto);
+    color: var(--color-texto-inverso);
+    background-color: var(--color-secundario);
+    width: 45%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 1.57rem;
+    font-size: 1.13rem;
+    cursor: pointer;
+}
+
+.button__button:hover{
+    background-color: var(--color-primario);
+}
+
+.form_crearCuenta{
+    font-family: var(--tipo-texto);
+    font-size: 1.18rem;
+    letter-spacing: 0.07rem;
+    color: var(--color-primario);
+    max-width: 800px;
+}
+
+.form_crearCuenta a{
+    text-decoration: none;
+    color: var(--color-texto-inverso-dos); 
+}
+
+.form_crearCuenta a:hover{
+    color: var(--color-primario);
+}
+
+hr{
+    max-width: 82%;
+    margin: auto;
+}
+
+.group-select{
+
+    display: flex;
+    margin-top: 0.63rem;
+    padding: 4px 14px;
+    border-radius: 0.63rem;
+    border: none;
+    text-align: left;
+    font-family: var(--tipo-texto);
+    align-items: center;
+    color: var(--color-primario);
+    font-size: 1.1rem;
+    text-align: left;
+    align-content: left;
+    
+    width: 98%;
+}
+
+
+option{
+    font-family: var(--tipo-texto);
+    align-content: left ;
+}
+
+@media only screen and (max-width: 768px){
+    
+    .contenedor__logo{
+        padding-top: 1.5rem;
+    }
+    
+    .container_login{
+        /* max-width: 31.25rem; */
+        max-width: 85%;
+    }
+    
+    .login-container{
+        padding: 2rem 0.63rem;
+    }
+    
+    
+    .form-group{
+        display: block;
+        max-width: 90%;
+        margin: auto;
+        text-align: left;
+        padding-top: 1rem;
+    }
+    
+    
+    .label__form{
+        font-family: var(--tipo-texto);
+        color: var(--color-primario);
+        padding-bottom: 0.63rem;
+        font-size: 1.13rem;
+        font-weight: 600;
+    }
+    
+    .form-group input{
+        margin-top: 0.63rem;
+        width: 90%;
+        border-radius: 0.63rem;
+        border: 0;
+        padding: 0.4rem 1rem;
+        outline: none;
+        font-size: 1rem;
+    
+    }
+    
+    .bxx{
+        position: relative;
+        top: -1.73rem;
+        left: 98%;
+        font-size: 1.57rem;
+        transform: translateX(-2.19rem);
+        color: var(--color-primario);
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .checkbox__checkbox{
+        padding-right: 1rem;
+        column-gap: 6rem;
+        align-items: center;
+        color: var(--color-secundario);
+    }
+    
+    .form__checkbox{
+        display: flex;
+        text-align: center;
+        column-gap: 1rem;
+        padding-right: 1.25rem;
+        color: var(--color-primario);
+        font-weight: 800;
+        max-width: 15.88rem;
+        margin: auto;
+    }
+     
+    .button__button:hover{
+        background-color: var(--color-primario);
+    }
+    
+    .form_crearCuenta{
+        font-family: var(--tipo-texto);
+        font-size: 1.18rem;
+        letter-spacing: 0.07rem;
+        color: var(--color-primario);
+        max-width: 800px;
+    }
+    
+    .form_crearCuenta a{
+        text-decoration: none;
+        color: var(--color-texto-inverso-dos); 
+    }
+    
+    .form_crearCuenta a:hover{
+        color: var(--color-primario);
+    }
+    
+    hr{
+        max-width: 82%;
+        margin: auto;
+    }
+    
+    .group-select{
+    
+        display: flex;
+        margin-top: 0.63rem;
+        padding: 4px 0.55rem;
+        border-radius: 0.63rem;
+        border: none;
+        text-align: left;
+        font-family: var(--tipo-texto);
+        align-items: center;
+        color: var(--color-primario);
+        font-size: 1.1rem;
+        text-align: left;
+        align-content: left;
+        
+        background-color: var(--color-texto-inverso);
+        width: 100%;
+    }
+    
+    
+    option{
+        font-family: var(--tipo-texto);
+        align-content: left ;
+    }
+
+}
+

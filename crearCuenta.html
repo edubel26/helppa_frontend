@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+
+    <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <script src="../public/assets/codigoReutilizable/js/nav.js"></script>
+    <script src="../public/assets/codigoReutilizable/js/loadre.js"></script>
+    <script src="/public/assets/codigoReutilizable/js/footer.js"></script>
+</head>
+<body>
+    <div class="container-total">   
+
+        <!--   carga de pantalla   -->
+        <loader-carga> </loader-carga>
+
+        <!-- menu de navegacion -->
+        <menu-nuv>      </menu-nuv>
+
+        <main>
+            <section class="contenedor__logo">
+                <img class="logo__inicioSesion" src="/public/assets/img/logo.png" alt="Logo Help paws">
+            </section>
+
+            <section class="container_login">
+
+                <div class="login-container">
+                    <h2 class="titulo">Crear cuenta</h2>
+                    <form  id="login-form" class="formurario__inicioSesion">
+                        <div class="form-group input">
+                            <label class="label__form" for="name">Nombres:</label>
+                            <input type="text" id="name" name="name" placeholder="Ingresar sus nombres" required>
+                        </div>
+                        <div class="form-group input">
+                            <label class="label__form" for="lastname">Apellidos</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Ingresar sus apellidos" required>
+                        </div>
+                        <div class="form-group input">
+                            <label class="label__form" for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="Ingresa su Correo" required>
+                        </div>
+                        <div class="form-group input">
+                            <label class="label__form" for="password">Contraseña:</label>
+                            <input type="password" id="password" name="password" placeholder="Ingresa su contraseña" required>
+                            <div><i class='bx bx-show-alt bxx'></i></div>    
+                        </div>
+                        <div class="form__checkbox">
+                            <input  class="checkbox__checkbox" type="checkbox" id="remember__termionos" name="remember__termionos" required>
+                            <label for="remember__termionos">Acepto que mi información se utilizára conforme a la politica de privacidad y politicas de <strong>Help Paws.</strong></a>
+                            </label>
+                        </div>
+                        <div class="form__button">
+                            <button class="button__button" type="submit">Crear cuenta</button>
+                        </div>
+                    </form>
+                    <p class="form_crearCuenta">¿Ya tiene una cuenta?  <a href="inicioDeSesion.html"><strong> Iniciar sesión .</strong></a></p>
+                </div>
+            </section>
+        </main>
+
+        <!-- pie de pagina foter -->
+        <footer-pie>   </footer-pie>
+
+        
+    </div>
+    <script src="js/codigoCarga.js"></script>
+    <script src="js/verpassword.js"></script>
+    <script src="/public/js/menuInicio.js"></script>
+    <script src="/public/js/form.js"></script>
+
+</body>
+</html>
