@@ -8,7 +8,7 @@ class menuNuv extends HTMLElement{
             <header class="nav__header">
                 <nav class="nav">
                     <a class="nav__logo" href="index.html">
-                        <img class="nav__logo__name" src="/public/assets/img/nombre.png" alt="Logo en nombre">
+                        <img class="nav__logo__name" src="/assets/img/nombre.png" alt="Logo en nombre">
                     </a>
                     <button class="abrirMenu" id="abrir">
                         <svg class="abrirMenu" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@ class menuNuv extends HTMLElement{
                                 <path d="M2 2L27 27"  stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
-                            <li class="nav__li selcted"><a href="/public/index.html">Inicio</a></li>
+                            <li class="nav__li selcted"><a href="index.html">Inicio</a></li>
                             <li class="nav__li"><a href="inicioDeSesion.html">Inicio de sesión</a></li>
                             <li class="nav__li"><a href="crearCuenta.html">Crear cuenta</a></li>
                     </ul>

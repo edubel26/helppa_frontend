@@ -59,10 +59,10 @@ function submitForm(data, url, method){
         .then(data => {
             if(data.status == "success"){
                 alert('Usuario registrado correctamente')
-                window.location.href = "/public/inicioDeSesion.html";
+                window.location.href = "inicioDeSesion.html";
             }else{
                 alert('El usuario ya esta registrado');
-                window.location.href = "/public/index.html";
+                window.location.href = "index.html";
             }
         })
         .catch(error => console.log("Error: ", error))

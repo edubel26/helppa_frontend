@@ -12,8 +12,8 @@ class footer extends HTMLElement{
                         <div class="box">
                             <figure>
                                 <a href="#">
-                                    <img src="/public/assets/img/logo.png" alt="logo HelpPaws">
-                                    <img src="/public/assets/img/nombre.png" alt="nombre logo helpPaws">
+                                    <img src="/assets/img/logo.png" alt="logo HelpPaws">
+                                    <img src="/assets/img/nombre.png" alt="nombre logo helpPaws">
                                 </a>
                             </figure>
                         </div>
