@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         if(rolUsuarios == ""){
-            alert("Error en el sistema reintentar mas tarde ");
+            alert("!ERROR¡ en el sistema re intentar mas tarde ");
         }else{
             console.log(rolUsuarios);
         }
@@ -73,71 +73,52 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const data = {
 
-
             email: document.getElementById('email').value,
             password: document.getElementById('password').value,
             rolUsuarios: document.getElementById('select')
      
         }
 
-        if(searchParams.has('id')){// Si llega un id en la URL -> Actualizamos
-            submitForm(data, "https://backend-ivory-tau.vercel.app/campeon/"+id, "PUT")
-        }else{
-            submitForm(data, "http://localhost:3000/login/", "POST")
-        }
+        submitForm(data, "http://localhost:3000/login", "POST")
 
     })
 
-    if(searchParams.has('id')){
-        const id = searchParams.get("id")// Asignamos el id a una variante
-        // Consulta la informacion del usuario que tiene ese id 
-        fetch('https://backend-ivory-tau.vercel.app/campeon/'+id)
-        .then(response => response.json())// Lo converte a formato json
-        .then(data => {
-            //Asognamos la informacion al formurario
-
-            document.getElementById('nombre').value = data.nombre
-            document.getElementById('clase').value = data.clase
-            document.getElementById('carril').value = data.carril
-            document.getElementById('costoEa').value = data.costoEa
-            document.getElementById('costoRp').value = data.costoRp
-        })
-    }
 })
 
 function submitForm(data, url, method){
+   
     fetch(url, {
-            method: method, 
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-        .then(response => {
-            return response.json()
-        })
-        .then(data => {
-            if(data.status == "success"){
+        method: method, 
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        return response.json()
+    })
+    .then(data => {
+        if(data.status == "success"){
 
-                const rolUsuarios = rolInput.value
+            const rolUsuarios = rolInput.value
 
-                if(rolUsuarios == "administrador" ){
-                    
-                    window.location.href = 'vistaAdministrador/index.html';
-                }else if ( rolUsuarios == "cliente"){
-        
-                    window.location.href = 'vistaCliente/index.html';
-                }else{
-        
-                    window.location.href = 'vistaUsuario/index.html';
-                }
-
+            if(rolUsuarios == "administrador" ){
+                
+                window.location.href = 'vistaAdministrador/index.html';
+            }else if ( rolUsuarios == "cliente"){
+    
+                window.location.href = 'vistaCliente/index.html';
             }else{
-                alert('Datos incorrectos o el usuario no existe');
-                window.location.href = "/public/index.html";
+    
+                window.location.href = 'vistaUsuario/index.html';
             }
-        })
-        .catch(error => console.log("Error: ", error))
+
+        }else{
+            alert('Datos incorrectos o el usuario no existe');
+            window.location.href = "crearCuenta.html";
+        }
+    })
+    .catch(error => console.log("Error: ", error))
 }
 
 
