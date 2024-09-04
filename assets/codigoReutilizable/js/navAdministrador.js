@@ -24,7 +24,7 @@ class menuNuv extends HTMLElement{
                                 <path d="M2 2L27 27"  stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
-                            <li class="nav__li selcted"><a href="vistaAdministrador/index.html">Menu</a></li>
+                            <li class="nav__li selcted"><a href="/vistaAdministrador/index.html">Menu</a></li>
                             <li class="nav__li">
                                 <a> Vistas </a>
                                 <ul>
