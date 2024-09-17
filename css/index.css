@@ -311,6 +311,23 @@ i{
   display: none;
 }
 
+.nav > li{
+  float: left;
+}
+
+.nav .menu__li .menu__a{
+  display:none;
+  position: absolute;
+} 
+
+.nav .menu__li:hover > ul{
+  display: block;
+ 
+  padding-left: 40px;
+
+}
+
+
 @media screen and (max-width: 950px){
   
   .abrirMenu,
@@ -351,7 +368,7 @@ i{
     top: 0;
     right: 0;
     bottom: 0;
-    padding: 2rem;   
+    padding: 3rem;   
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     
     opacity: 0;
@@ -362,6 +379,7 @@ i{
 
   .nav__li{
     padding-top: 5rem;
+    padding-left: 10rem;
   }
 
   .nav__ul.visible {
@@ -403,6 +421,22 @@ i{
     max-width: 80%;
     line-height: 0rem;
   }
-
+  .menu__li .menu__a{
+    display: block;
+  }
+  
+  .nav > li{
+    float: left;
+  }
+  
+  .nav .menu__li .menu__a{
+    display:none;
+    position:absolute;
+  } 
+  
+  .menu__li:hover > ul{
+    display: grid;
+    background-color: var(--color-nav);
+  }
 
 }

@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Limpiar datos almacenados si no se marcó el checkbox
             localStorage.removeItem('storedEmail');
             localStorage.removeItem('storedPassword');
-            sessionStorage.setItem('storedRol', rolUsuarios);
+            sessionStorage.removeItem('storedRol');
             
         }
 

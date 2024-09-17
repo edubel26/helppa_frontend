@@ -27,6 +27,19 @@ class menuNuv extends HTMLElement{
                         <li class="nav__li selcted"><a href="/vistaUsuario/index.html">Menu de inicio</a></li>
                         <li class="nav__li"><a href="perfilUsario.html">Mi perfil</a></li>
                         <li class="nav__li"><a href="../index.html">Salir</a></li>
+                        <script>
+                                const rol = sessionStorage.getItem('storedRol');
+        
+                                if(rol == "administrador"){  
+                        </script>
+                        <li class="nav__li menu__li"><a>Vistas</a>
+                            <ul hidden>
+                                <li class"menu__li" id"eje" class""><a href="../vistaCliente/index.html">Vista cliente</a></li>
+                                <li class"menu__li" id"eje" class""><a href="../vistaUsuario/index.html">Vista usuario</a></li>
+                            </ul>
+                        </li>
+                
+                        <script> } </script>
                     </ul>
                 </nav>
             </header>

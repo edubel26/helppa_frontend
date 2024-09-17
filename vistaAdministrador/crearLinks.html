@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/menuUsuario.css">
     <link rel="stylesheet" href="/css/tables.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="../vistaUsuario/index.html">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo-navegador/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo-navegador/favicon-32x32.png">
@@ -21,7 +23,7 @@
 </head>
 <body>
     <div class="container-total">  
-        
+
         <!--   carga de pantalla   -->
         <loader-carga> </loader-carga>
 
@@ -33,26 +35,33 @@
                 src="/assets/img/logo.png" 
                 alt="Logo HelpPaws"
             >
-            <div class="contenedor__table">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Nombres</th>
-                            <th>Correo electrónico</th>
-                            <th>Rol</th>
-                            <th>Rol numérico</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Eduard beltran</td>
-                            <td>beltran502@hotmail.com</td>
-                            <td>cliente</td>
-                            <td>2</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <section class="container_login">
+                <div class="login-container">
+                    <h2 class="titulo">Creación de links</h2>
+                    <form id="login-form" class="formurario__inicioSesion" method="post"> 
+                        <div class="form-group input">
+                            <label class="label__form" for="nombreLinks">Nombre link:</label>
+                            <input type="text" id="nombreLinks" name="nombreLinks" placeholder="Nombre link" required>
+                        </div>
+                        <div class="form-group input">
+                            <label class="label__form" for="links">Dirección de nuevo links: </label>
+                            <input type="text" id="links" name="links" placeholder="Dirección de nuevo links" required>
+                        </div>
+                        <div class="form-group input select">
+                            <label class="label__form" for="opcionlinks">Ubicación del nueva link: </label>
+                            <select class="group-select" id="opcionlinks" name="opcionlinks" required>
+                                <option class="value" value="" selected >Seleccione una opción:</option>
+                                <option class="value" value="vacunacion" required >Vacunación</option>
+                                <option class="value" value="esterilizacion" required >Esterilización</option>
+                                <option class="value" value="proteccionAnimal" required >Protección animal</option>
+                            </select>
+                        </div>
+                        <div class="form__button">
+                            <button class="button__button" type="submit">Registrar link</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </main>
         
         <!-- pie de pagina fOoter -->

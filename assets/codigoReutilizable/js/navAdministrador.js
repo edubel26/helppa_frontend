@@ -25,17 +25,19 @@ class menuNuv extends HTMLElement{
                             </svg>
                         </button>
                             <li class="nav__li selcted"><a href="/vistaAdministrador/index.html">Menu</a></li>
-                            <li class="nav__li">
-                                <a> Vistas </a>
-                                <ul>
-                                    <li class="nav__li"><a href="#">Inicio menu</a></li>
-                                    <li class="nav__li"><a href="#">Vistas</a></li>
+                            
+                            <li class="nav__li"><a href="#" onclick="salir()">Salir</a></li>                            
+                            <li class="nav__li menu__li"><a>Vistas</a>
+                                <ul hidden>
+                                    <li class"menu__li" id"eje" class""><a href="../vistaCliente/index.html">Vista cliente</a></li>
+                                    <li class"menu__li" id"eje" class""><a href="../vistaUsuario/index.html">Vista usuario</a></li>
                                 </ul>
                             </li>
-                            <li class="nav__li"><a href="../index.html">Salir</a></li>
                     </ul>
                 </nav>
             </header>
+
+            <script src="/js/seguridad.js"></script>
         `;
     }
 }

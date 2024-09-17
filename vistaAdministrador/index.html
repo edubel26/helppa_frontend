@@ -1,62 +1,99 @@
 <!DOCTYPE html>
 <html lang="es-CO">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Help paws - Administrador</title>
 
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/ayudaAnimal.css">
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/ayudaAnimal.css" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo-navegador/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo-navegador/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/logo-navegador/favicon-16x16.png">
-    <link rel="manifest" href="/assets/logo-navegador/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/logo-navegador/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/logo-navegador/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/logo-navegador/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/logo-navegador/site.webmanifest" />
 
     <script src="/assets/codigoReutilizable/js/navAdministrador.js"></script>
     <script src="/assets/codigoReutilizable/js/loadre.js"></script>
     <script src="/assets/codigoReutilizable/js/footer.js"></script>
+  </head>
+  <body>
+    <div class="container-total">
+      <!--   carga de pantalla   -->
+      <loader-carga> </loader-carga>
 
-</head>
-<body> 
-    <div class="container-total">  
-        
-        <!--   carga de pantalla   -->
-        <loader-carga> </loader-carga>
+      <!-- menu de navegación -->
+      <menu-nuv> </menu-nuv>
 
-        <!-- menu de navegación -->
-        <menu-nuv>   </menu-nuv>
-        
-        <main>
-            <section class="container__ayudaAnimal">
-                <img class="img__logo__ayudaAnimal" src="/assets/img/logo.png" alt="Logo Helppaws">
-                <div class="container__ayudaAnimal__link">
-                   <div class="ayudaAnimal">
-                        <h1 class="titulo__ayudaAnimel">Procesos administrativos: </h1>
-                        <ol class="caja__lista__ayudaAnimal"> 
-                            <li><a href="/vistaAdministrador/crearLinks.html">Crear links</a></li>  
-                            <li><a href="/vistaAdministrador/eliminarLinks.html">Eliminar link</a></li>  
-                            <li><a href="/vistaAdministrador/listaClientes.html">Listar clientes</a></li>  
-                            <li><a href="/vistaAdministrador/listaUsuarios.html">Listar de usuarios</a></li>  
-                            <li><a href="/vistaAdministrador/listaRegistros.html">Lista de registrados pdf</a></li>    
-                        </ol>
-                   </div>     
-                    
-                    <div class="img__ayudaAnimal">
-                        <img class="img-perro" src="/assets/img/perro.png" alt="Imagen de un perro cafe">
-                    </div>
-                </div>
-            </section>
-        </main> 
+      <main>
+        <section class="container__ayudaAnimal">
+          <img
+            class="img__logo__ayudaAnimal"
+            src="/assets/img/logo.png"
+            alt="Logo Helppaws"
+          />
+          <div class="container__ayudaAnimal__link">
+            <div class="ayudaAnimal">
+              <h1 class="titulo__ayudaAnimel">Procesos administrativos:</h1>
+              <ol class="caja__lista__ayudaAnimal">
+                <li>
+                  <a href="/vistaAdministrador/crearLinks.html">Crear links</a>
+                </li>
+                <li>
+                  <a href="/vistaAdministrador/eliminarLinks.html"
+                    >Eliminar link</a
+                  >
+                </li>
+                <li>
+                  <a href="/vistaAdministrador/listaClientes.html"
+                    >Listar clientes</a
+                  >
+                </li>
+                <li>
+                  <a href="/vistaAdministrador/listaUsuarios.html"
+                    >Listar de usuarios</a
+                  >
+                </li>
+                <li>
+                  <a href="/vistaAdministrador/listaRegistros.html"
+                    >Lista de registrados pdf</a
+                  >
+                </li>
+              </ol>
+            </div>
 
-        <!-- pie de pagina footer -->
-        <footer-pie>    </footer-pie>
+            <div class="img__ayudaAnimal">
+              <img
+                class="img-perro"
+                src="/assets/img/perro.png"
+                alt="Imagen de un perro cafe"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
 
+      <!-- pie de pagina footer -->
+      <footer-pie> </footer-pie>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/js/codigoCarga.js"></script>
     <script src="/js/menuInicio.js"></script>
-    
-</body>
+    <script src="/js/seguridad.js"></script>
+  </body>
 </html>
