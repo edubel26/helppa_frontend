@@ -18,16 +18,16 @@
         }
 
         if(searchParams.has('id')){ // Si llega un id en la URL -> Actualizamos
-            submitForm(data, "http://localhost:3000/usuario"+id, "PUT")
+            submitForm(data, "https://helppawsbackend.vercel.app/usuario"+id, "PUT")
         }else{
-            submitForm(data, "http://localhost:3000/usuario", "POST")
+            submitForm(data, "https://helppawsbackend.vercel.app/usuario", "POST")
         }
     })
 
     // Obtenemos el id de la url
     if(searchParams.has('id')){ // verificamos si el parámetro id viene en la url
         // Consulta la información del usuario que tiene ese id
-        fetch('http://localhost:3000/usuario'+id)
+        fetch('https://helppawsbackend.vercel.app/usuario'+id)
         .then(response => response.json()) // Lo convierte a formato json
         .then(data => {
             // Asignamos la información al formulario
