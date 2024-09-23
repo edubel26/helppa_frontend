@@ -1,3 +1,6 @@
+// se crea la variante para saber desde que correo se va a reportar la creación del correo 
+const mail = document.getElementById('email').value;
+ console.log(mail);
  // Ejecuta una acción cuando carga la pagina
  document.addEventListener('DOMContentLoaded', function() {
 
@@ -17,28 +20,14 @@
             password: document.getElementById('password').value
         }
 
-        if(searchParams.has('id')){ // Si llega un id en la URL -> Actualizamos
-            submitForm(data, "https://helppawsbackend.vercel.app/usuario"+id, "PUT")
-        }else{
-            submitForm(data, "https://helppawsbackend.vercel.app/usuario", "POST")
-        }
-    })
 
-    // Obtenemos el id de la url
-    if(searchParams.has('id')){ // verificamos si el parámetro id viene en la url
-        // Consulta la información del usuario que tiene ese id
-        fetch('https://helppawsbackend.vercel.app/usuario'+id)
-        .then(response => response.json()) // Lo convierte a formato json
-        .then(data => {
-            // Asignamos la información al formulario
-            document.getElementById('nombres').value = data.nombres
-            document.getElementById('apellidos').value = data.apellidos
-            document.getElementById('email').value = data.email
-        })
-    }
+        submitForm(data, "https://helppawsbackend.vercel.app/usuario", "POST")
+    });
+
 })
 
 function submitForm(data, url, method){
+
 
     fetch(url, { // localhost:3000/usuario
             method: method, // POST
@@ -52,7 +41,7 @@ function submitForm(data, url, method){
         })
         .then(data => {
             if(data.status == "success"){ // Validamos la respuesta del servidor
-                alert('Usuario registrado correctamente')
+                alert('Usuario registrado correctamente, Se envió un correo de confirmación de cuenta al coreeo:  '+ email.value);
                 window.location.href = "inicioDeSesion.html"; // Re diseccionamos a la lista
             }else{
                 alert('Error, el usuario ya esta registrado');
