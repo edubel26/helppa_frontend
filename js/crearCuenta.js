@@ -21,7 +21,7 @@ const mail = document.getElementById('email').value;
         }
 
 
-        submitForm(data, "https://helppawsbackend.vercel.app/usuario", "POST")
+        submitForm(data, "http://localhost:3000/usuario", "POST")
     });
 
 })

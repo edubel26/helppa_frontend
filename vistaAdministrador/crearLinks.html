@@ -1,73 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help paws - </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help paws -</title>
 
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/menuUsuario.css">
-    <link rel="stylesheet" href="/css/tables.css">
-    <link rel="stylesheet" href="/css/form.css">
-    <link rel="stylesheet" href="../vistaUsuario/index.html">
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/menuUsuario.css" />
+    <link rel="stylesheet" href="/css/tables.css" />
+    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="../vistaUsuario/index.html" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo-navegador/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo-navegador/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/logo-navegador/favicon-16x16.png">
-    <link rel="manifest" href="/assets/logo-navegador/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/logo-navegador/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/logo-navegador/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/logo-navegador/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/logo-navegador/site.webmanifest" />
 
     <script src="/assets/codigoReutilizable/js/loadre.js"></script>
     <script src="/assets/codigoReutilizable/js/navAdministrador.js"></script>
     <script src="/assets/codigoReutilizable/js/footer.js"></script>
+  </head>
+  <body>
+    <div class="container-total">
+      <!--   carga de pantalla   -->
+      <loader-carga> </loader-carga>
 
-</head>
-<body>
-    <div class="container-total">  
+      <!-- menu de navegación -->
+      <menu-nuv> </menu-nuv>
 
-        <!--   carga de pantalla   -->
-        <loader-carga> </loader-carga>
+      <main>
+        <img class="logo" src="/assets/img/logo.png" alt="Logo HelpPaws" />
+        <section class="container_login">
+          <div class="login-container">
+            <h2 class="titulo">Creación de links</h2>
+            <form id="crearLink" class="formurario__inicioSesion" method="post">
+              <div class="form-group input">
+                <label class="label__form" for="nombreLinks"
+                  >Nombre link:</label
+                >
+                <input
+                  type="text"
+                  id="nombreLinks"
+                  name="nombreLinks"
+                  placeholder="Nombre link"
+                  required
+                />
+              </div>
+              <div class="form-group input">
+                <label class="label__form" for="links"
+                  >Dirección de nuevo links:
+                </label>
+                <input
+                  type="text"
+                  id="links"
+                  name="links"
+                  placeholder="Dirección de nuevo links"
+                  required
+                />
+              </div>
+              <div class="form-group input select">
+                <label class="label__form" for="opcionlinks"
+                  >Ubicación del nueva link:
+                </label>
+                <select
+                  class="group-select"
+                  id="opcionlinks"
+                  name="opcionlinks"
+                  required
+                >
+                  <option class="value" value="" selected>
+                    Seleccione una opción:
+                  </option>
+                  <option class="value" value="vacunacion" required>
+                    Vacunación
+                  </option>
+                  <option class="value" value="esterilizacion" required>
+                    Esterilización
+                  </option>
+                  <option class="value" value="proteccionAnimal" required>
+                    Protección animal
+                  </option>
+                </select>
+              </div>
+              <div class="form__button">
+                <button class="button__button" type="submit">
+                  Registrar link
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
 
-        <!-- menu de navegación -->
-        <menu-nuv>      </menu-nuv>
-
-        <main>
-            <img class="logo" 
-                src="/assets/img/logo.png" 
-                alt="Logo HelpPaws"
-            >
-            <section class="container_login">
-                <div class="login-container">
-                    <h2 class="titulo">Creación de links</h2>
-                    <form id="login-form" class="formurario__inicioSesion" method="post"> 
-                        <div class="form-group input">
-                            <label class="label__form" for="nombreLinks">Nombre link:</label>
-                            <input type="text" id="nombreLinks" name="nombreLinks" placeholder="Nombre link" required>
-                        </div>
-                        <div class="form-group input">
-                            <label class="label__form" for="links">Dirección de nuevo links: </label>
-                            <input type="text" id="links" name="links" placeholder="Dirección de nuevo links" required>
-                        </div>
-                        <div class="form-group input select">
-                            <label class="label__form" for="opcionlinks">Ubicación del nueva link: </label>
-                            <select class="group-select" id="opcionlinks" name="opcionlinks" required>
-                                <option class="value" value="" selected >Seleccione una opción:</option>
-                                <option class="value" value="vacunacion" required >Vacunación</option>
-                                <option class="value" value="esterilizacion" required >Esterilización</option>
-                                <option class="value" value="proteccionAnimal" required >Protección animal</option>
-                            </select>
-                        </div>
-                        <div class="form__button">
-                            <button class="button__button" type="submit">Registrar link</button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </main>
-        
-        <!-- pie de pagina fOoter -->
-        <footer-pie>    </footer-pie>
+      <!-- pie de pagina fOoter -->
+      <footer-pie> </footer-pie>
     </div>
+    <script src="/js/crearNuevoLink.js"></script>
     <script src="/js/codigoCarga.js"></script>
     <script src="/js/menuInicio.js"></script>
-</body>
+  </body>
 </html>
